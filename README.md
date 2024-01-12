@@ -2,8 +2,6 @@
 
 ## Overview
 
-## Overview
-
 We are delighted to propose the creation of a comprehensive and impactful website for your Reintegration Program. This digital platform aims to showcase the program's mission, services, success stories, and resources while providing a user-friendly experience for individuals seeking reintegration support.
 
 ## Purpose
