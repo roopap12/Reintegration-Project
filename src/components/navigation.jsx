@@ -1,6 +1,9 @@
 import React from "react";
 
 export const Navigation = (props) => {
+  const navbarStyle = {
+    height: "80px", // Adjust the height as needed
+  };
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -18,7 +21,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+           <img src="img/Reintegration-Hub-PNG-FILE.png" className="img-responsive custom-logo"  alt="" />
           </a>{" "}
         </div>
 
@@ -44,12 +47,12 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                Resources
               </a>
             </li>
             <li>
               <a href="#testimonials" className="page-scroll">
-                Testimonials
+                Success Stories
               </a>
             </li>
             <li>

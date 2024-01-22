@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Testimonials = (props) => {
+export const SuccessStories = (props) => {
   return (
     <div id="testimonials">
       <div className="container">

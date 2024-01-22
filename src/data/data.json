@@ -1,7 +1,7 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "United Creating Opportunities",
+    "paragraph": "Empower your journey with the Reintegration Hub, a one-stop haven for all your needs"
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -18,7 +18,7 @@
       "Lorem ipsum dolor"
     ]
   },
-  "Gallery": [
+  "Resources": [
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/01-large.jpg",
@@ -67,37 +67,54 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-gavel",
+      "name": "Legal Aid",
+      "text": "Legal Aid services in New Zealand may provide crucial support if you face financial barriers, ensuring access to justice by offering legal assistance and representation."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-home",
+      "name": "Accommodation",
+      "text": "Accommodation service providers play a vital role by offering safe and supportive housing options aimed at facilitating your successful reintegration into society."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-book",
+      "name": "Education",
+      "text": "Education options including vocational training and skill development programs can empower you with the tools needed for a successful transition and a brighter future.",
+      "paragraph": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph1": "Click on the resources button below to access a link to learn more about legal aid services in New Zealand.",
+      "paragraph2": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph3": "Click on the resources button below to access a link to learn more about accommodation services in New Zealand.",
+      "paragraph4": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph5": "Click on the resources button below to access a link to learn more about education services in New Zealand.",
+      "paragraph6": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph7": "Click on the resources button below to access a link to learn more about employment services in New Zealand.",
+      "paragraph8": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph9": "Click on the resources button below to access a link to learn more about mental health services in New Zealand.",
+      "paragraph10": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph11": "Click on the resources button below to access a link to learn more about rehabilitation services in New Zealand."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-briefcase",
+      "name": "Employment",
+      "text": "Employment services provide options that encompass a range of opportunities including training and job placement to enable your successful reintegration into the workforce."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-medkit",
+      "name": "Mental Health",
+      "text": "Health services including comprehensive mental health care and counseling, to support your holistic well-being can play a crucial role in supporting your journey and transition."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
+      "icon": "fa fa-building-o",
+      "name": "Rehabilitation",
+      "text": "Rehabilitation services including counseling and therapy, with the goal of fostering your recovery, preventing relapse, and promoting successful reintegration into society."
+    }   
   ],
-  "Testimonials": [
+  "Legalaid": [
+    {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+],
+  "SuccessStories": [
     {
       "img": "img/testimonials/01.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
@@ -161,24 +178,24 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Access to Support Services",
+      "text": "Links to support agencies and services."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-info",
+      "title": "One Stop Shop",
+      "text": "Relevant information to help you along your reitegration journey."
+    },
+    {
+      "icon": "fa fa-thumbs-o-up",
+      "title": "Easy to Use",
+      "text": "Straight forward, designed to help not hinder."
+    },
+    {
+      "icon": "fa fa-trophy",
+      "title": "Success Stories",
+      "text": "Tales from those who have worked with us and succeeded."
     }
   ]
 }
