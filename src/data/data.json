@@ -20,100 +20,91 @@
   },
   "Resources": [
     {
-      "title": "Project Title",
+      "title": "Legal Aid",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Accommodation",
       "largeImage": "img/portfolio/02-large.jpg",
       "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Education",
       "largeImage": "img/portfolio/03-large.jpg",
       "smallImage": "img/portfolio/03-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Employment",
       "largeImage": "img/portfolio/04-large.jpg",
       "smallImage": "img/portfolio/04-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Mental Health",
       "largeImage": "img/portfolio/05-large.jpg",
       "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Rehabilitation",
       "largeImage": "img/portfolio/06-large.jpg",
       "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
   "Services": [
     {
       "icon": "fa fa-gavel",
       "name": "Legal Aid",
-      "text": "Legal Aid services in New Zealand may provide crucial support if you face financial barriers, ensuring access to justice by offering legal assistance and representation."
+      "text": "Legal Aid services in New Zealand may provide crucial support if you face financial barriers, ensuring access to justice by offering legal assistance and representation.",
+      "link": "/legalaid"
     },
     {
       "icon": "fa fa-home",
       "name": "Accommodation",
-      "text": "Accommodation service providers play a vital role by offering safe and supportive housing options aimed at facilitating your successful reintegration into society."
+      "text": "Accommodation service providers play a vital role by offering safe and supportive housing options aimed at facilitating your successful reintegration into society.",
+      "link": "/accommodation"
     },
     {
       "icon": "fa fa-book",
       "name": "Education",
       "text": "Education options including vocational training and skill development programs can empower you with the tools needed for a successful transition and a brighter future.",
+      "link": "/education",
       "paragraph": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
       "paragraph1": "Click on the resources button below to access a link to learn more about legal aid services in New Zealand.",
-      "paragraph2": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph2": "Accommodation service providers play a crucial role in fostering successful reintegration by providing secure and supportive housing options. These services are designed to offer a stable environment conducive to rehabilitation, ensuring individuals have the necessary resources to break the cycle of incarceration. By addressing housing needs, these providers contribute significantly to the overall well-being and successful transition of individuals from the criminal justice system back into society.",
       "paragraph3": "Click on the resources button below to access a link to learn more about accommodation services in New Zealand.",
-      "paragraph4": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph4": "Education services empower individuals through various options, including vocational training and skill development programs. These initiatives provide essential tools for a successful transition, equipping individuals with the knowledge and capabilities necessary for reintegration into society. By focusing on education, these services contribute to breaking the cycle of criminal behaviour and offer a pathway to a brighter and more sustainable future.",
       "paragraph5": "Click on the resources button below to access a link to learn more about education services in New Zealand.",
-      "paragraph6": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph6": "Employment services provide options that encompass a range of opportunities, including training and job placement, to enable successful reintegration into the workforce. By offering these avenues, individuals gain the skills and support necessary to secure employment, contributing to their overall rehabilitation and reducing the likelihood of recidivism. These services play a pivotal role in breaking down barriers to employment, fostering self-sufficiency, and promoting a positive and sustainable transition for individuals seeking to rebuild their lives.",
       "paragraph7": "Click on the resources button below to access a link to learn more about employment services in New Zealand.",
-      "paragraph8": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph8": "Mental health services, encompassing comprehensive mental health care and counseling, play a crucial role in supporting individuals' holistic well-being within the transition process. These services are designed to address the unique mental health needs of individuals, providing essential support to enhance their overall resilience and coping mechanisms. By prioritising mental health, these services contribute significantly to fostering a positive and sustainable journey for individuals seeking to reintegrate into society.",
       "paragraph9": "Click on the resources button below to access a link to learn more about mental health services in New Zealand.",
-      "paragraph10": "Legal aid services are essential for promoting equal access to justice in New Zealand, particularly for individuals facing criminal charges. These services provide crucial support by offering free or affordable legal advice, aiding in understanding one's rights and making informed decisions. Additionally, legal aid services simplify the complexities of criminal legal processes through document preparation and review assistance. Importantly, they extend representation in court, striving to level the playing field and ensure that everyone, regardless of financial means, has a fair opportunity to assert their rights and access justice within the New Zealand legal system.",
+      "paragraph10": "Rehabilitation services, including counselling and therapy, aim to foster individuals' recovery, prevent relapse, and promote successful reintegration into society. These services prioritise addressing the root causes of challenges, providing essential support to facilitate personal growth and positive change. By emphasising rehabilitation, these services contribute to breaking the cycle of difficulties, offering individuals the tools and guidance needed for a meaningful and sustainable transition.",
       "paragraph11": "Click on the resources button below to access a link to learn more about rehabilitation services in New Zealand."
     },
     {
       "icon": "fa fa-briefcase",
       "name": "Employment",
-      "text": "Employment services provide options that encompass a range of opportunities including training and job placement to enable your successful reintegration into the workforce."
+      "text": "Employment services provide options that encompass a range of opportunities including training and job placement to enable your successful reintegration into the workforce.",
+      "link": "/employment"
     },
     {
       "icon": "fa fa-medkit",
       "name": "Mental Health",
-      "text": "Health services including comprehensive mental health care and counseling, to support your holistic well-being can play a crucial role in supporting your journey and transition."
+      "text": "Health services including comprehensive mental health care and counseling, to support your holistic well-being can play a crucial role in supporting your journey and transition.",
+      "link": "/mentalhealth"
     },
     {
       "icon": "fa fa-building-o",
       "name": "Rehabilitation",
-      "text": "Rehabilitation services including counseling and therapy, with the goal of fostering your recovery, preventing relapse, and promoting successful reintegration into society."
-    }   
+      "text": "Rehabilitation services including counseling and therapy, with the goal of fostering your recovery, preventing relapse, and promoting successful reintegration into society.",
+      "link": "/rehabilitation"
+    }
   ],
   "Legalaid": [
     {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  }
-],
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ],
   "SuccessStories": [
     {
       "img": "img/testimonials/01.jpg",

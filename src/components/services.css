@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+}
+
+.paragraph,
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4,
+.paragraph5,
+.paragraph6,
+.paragraph7,
+.paragraph8,
+.paragraph9,
+.paragraph10,
+.paragraph11,
+.paragraph12 {
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.card .card-body .card-title {
+  position: relative;
+}
+
+.card .card-body .card-title::after {
+  content: "";
+  background: linear-gradient(to right, #9095f8 0%, #1a1e63 100%);
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1650px) {
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 300px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+}

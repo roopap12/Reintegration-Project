@@ -1,39 +1,34 @@
 import React from "react";
-
+import './services.css'
 export const Legalaid = (props) => {
   return (
-    <div id="legalaid">
-    <div style={{ padding: "60px", height: "100vh" }}>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-12">
-            <div className="card" style={{ backgroundColor: "white", marginRight: "20px", height: "80vh" }}>
-              <div className="card-body text-center" style={{ padding: "100px 0" }}>
-                <h2 className="card-title">
-                  Legal Aid
-                </h2>
-                <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} >
-                  {" "}
-                <p style={{ margin: "0 150px", marginBottom: "40px" }}>{d.paragraph}</p>
-                <div>
-                <p></p>
-                </div>
-                <p style={{ margin: "0 150px" }}>{d.paragraph1}</p>
-                </div>
-              ))
-            : "Loading..."}
-        </div>
-                <div className="text-center">
-                  <a
-                    href="#features"
-                    className="btn btn-custom btn-lg page-scroll"
-                    style={{ marginTop: "20px" }}
-                  >
-                    Resources
-                  </a>
+    <div id="legalaid" className="screen">
+      <div className="container-fluid">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-12">
+              <div className="card">
+                <div className="card-body text-center">
+                  <h2 className="card-title">Legal Aid</h2>
+                  <div className="row">
+                    {props.data
+                      ? props.data.map((d, i) => (
+                          <div key={`${d.title}-${i}`}>
+                            {" "}
+                            <p className="paragraph">{d.paragraph}</p>
+                            <div>
+                              <p></p>
+                            </div>
+                            <p className="paragraph1">{d.paragraph1}</p>
+                          </div>
+                        ))
+                      : "Loading..."}
+                  </div>
+                  <div className="text-center">
+                    <a href="#features" className="btn btn-custom btn-lg page-scroll">
+                      Resources
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -41,9 +36,11 @@ export const Legalaid = (props) => {
         </div>
       </div>
     </div>
-    </div>
   );
 };
+
+
+
 
 
 

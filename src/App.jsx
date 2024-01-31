@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
@@ -24,6 +25,14 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
+const Layout = ({ children }) => (
+  <>
+    <Navigation />
+    {children}
+    <Footer />
+  </>
+);
+
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
@@ -31,24 +40,75 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <Router>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Legalaid data={landingPageData.Services}/>
-      <Accommodation data={landingPageData.Services} />
-      <Education data={landingPageData.Services} />
-      <Employment data={landingPageData.Services} />
-      <Mentalhealth data={landingPageData.Services} />
-      <Rehabilitation data={landingPageData.Services} />
-      <Resources data={landingPageData.Resources} />
-      <SuccessStories data={landingPageData.SuccessStories} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-      <Footer data={landingPageData.Footer} />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              {" "}
+              <Header data={landingPageData.Header} />
+              <Features data={landingPageData.Features} />
+              <About data={landingPageData.About} />
+              <Services data={landingPageData.Services} />
+              <Resources data={landingPageData.Resources} />
+              <SuccessStories data={landingPageData.SuccessStories} />
+              <Team data={landingPageData.Team} />
+              <Contact data={landingPageData.Contact} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/legalaid"
+          element={
+            <Layout>
+              <Legalaid data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/accommodation"
+          element={
+            <Layout>
+              <Accommodation data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/education"
+          element={
+            <Layout>
+              <Education data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/employment"
+          element={
+            <Layout>
+              <Employment data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/mentalhealth"
+          element={
+            <Layout>
+              <Mentalhealth data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+        <Route
+          path="/rehabilitation"
+          element={
+            <Layout>
+              <Rehabilitation data={landingPageData.Services} />
+            </Layout>
+          }
+        />
+      </Routes>
+    </Router>
   );
 };
 

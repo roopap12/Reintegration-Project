@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   const navbarStyle = {
@@ -20,9 +21,11 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
+          <Link to="/">
           <a className="navbar-brand page-scroll" href="#page-top">
            <img src="img/Reintegration-Hub-PNG-FILE.png" className="img-responsive custom-logo"  alt="" />
           </a>{" "}
+          </Link>
         </div>
 
         <div
