@@ -1,62 +1,87 @@
-// This middleware includes functions to hash passwords, 
-// generate JWT tokens, authenticate users, and check for admin role. 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const User = require('../models/User'); // Import your User model
+const dotenv = require('dotenv');
 
-// Replace 'your-secret-key' with a strong, unique secret key for JWT
+dotenv.config(); // Load environment variables
+
 const secretKey = process.env.JWT_SECRET_KEY;
+const apiKey = process.env.API_KEY; 
 
-// Middleware to hash the user's password before saving it
 const hashPassword = async (req, res, next) => {
-  if (req.body.password) {
+ if (req.body.password) {
     try {
       const hashedPassword = await bcrypt.hash(req.body.password, 10);
       req.body.password = hashedPassword;
     } catch (error) {
       return res.status(500).json({ message: 'Error hashing password' });
     }
-  }
-  next();
+ }
+ next();
 };
 
-// Middleware to generate JWT token for authentication
 const generateToken = (user) => {
-  const payload = {
+ const payload = {
     id: user._id,
-    username: user.username, // Include any other user information you want in the token
+    username: user.username,
     role: user.role,
-  };
+ };
 
-  return jwt.sign(payload, secretKey, { expiresIn: '1h' }); // Adjust the expiration time as needed
+ return jwt.sign(payload, secretKey, { expiresIn: '1h' });
 };
 
-// Middleware to authenticate user credentials
 const authenticateUser = async (req, res, next) => {
-  const { username, password } = req.body;
+ // Check API Key first
+ if (!req.headers['api-key'] || req.headers['api-key'] !== apiKey) {
+    console.log('Invalid API Key');
+    return res.status(401).json({ message: 'Invalid API key' });
+ }
 
-  try {
-    // Implement your user retrieval logic from the database here
+ const { username, password } = req.body;
+
+ try {
     const user = await User.findOne({ username });
 
-    if (!user || !(await bcrypt.compare(password, user.password))) {
-      return res.status(401).json({ message: 'Invalid credentials' });
+    if (!user) {
+      console.log('User not found');
+      return res.status(401).json({ message: 'Invalid credentials - User not found' });
+    }
+
+    const isPasswordMatch = await bcrypt.compare(password, user.password);
+    console.log('Is password match?', isPasswordMatch);
+
+    if (!isPasswordMatch) {
+      console.log('Password mismatch');
+      return res.status(401).json({ message: 'Invalid credentials - Password mismatch' });
     }
 
     req.token = generateToken(user);
     req.user = user;
     next();
-  } catch (error) {
+ } catch (error) {
+    console.error('Error authenticating user:', error);
     res.status(500).json({ message: 'Error authenticating user' });
-  }
+ }
 };
 
-// Middleware to check if the user has admin role
 const isAdmin = (req, res, next) => {
-  if (req.user && req.user.role === 'admin') {
-    next();
+  if (req.headers['authorization']) {
+     const token = req.headers['authorization'].split(' ')[1]; // Assuming Bearer token format
+ 
+     try {
+       const decoded = jwt.verify(token, secretKey);
+       req.user = decoded;
+       if (req.user.role === 'admin') {
+         next();
+       } else {
+         res.status(403).json({ message: 'Permission denied' });
+       }
+     } catch (error) {
+       res.status(401).json({ message: 'Invalid token' });
+     }
   } else {
-    res.status(403).json({ message: 'Permission denied' });
+     res.status(401).json({ message: 'No token provided' });
   }
-};
-
-module.exports = { hashPassword, authenticateUser, isAdmin };
+ };
+ 
+ module.exports = { hashPassword, authenticateUser, isAdmin };

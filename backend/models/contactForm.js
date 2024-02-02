@@ -3,6 +3,11 @@
 const mongoose = require('mongoose');
 
 const contactFormSchema = new mongoose.Schema({
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User', // Reference to the User model
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -24,7 +29,7 @@ const contactFormSchema = new mongoose.Schema({
     required: true,
   },
   profilePicture: {
-    type: String, // Assuming you store the path or URL to the profile picture
+    type: String,
   },
   createdAt: {
     type: Date,

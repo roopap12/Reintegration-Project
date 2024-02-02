@@ -28,46 +28,34 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// POST a new service (requires authentication)
-router.post('/', auth, async (req, res) => {
+// Route to create a new service (requires authentication and admin role) auth.authenticateUser and auth.isAdmin middleware to ensure that only authenticated users with the 'admin' role can perform 
+router.post('/', auth.authenticateUser, auth.isAdmin, async (req, res) => {
   try {
-    const newService = await Service.create(req.body);
-    res.status(201).json(newService);
+    const newService = new Service(req.body);
+    const savedService = await newService.save();
+    res.json(savedService);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ message: 'Error creating service' });
   }
 });
 
-// PUT/UPDATE a service by ID (requires authentication)
-router.put('/:id', auth, async (req, res) => {
+// PUT/UPDATE a service by ID (requires authentication) auth.authenticateUser and auth.isAdmin middleware to ensure that only authenticated users with the 'admin' role can perform 
+router.put('/:id', auth.authenticateUser, auth.isAdmin, async (req, res) => {
   try {
-    const updatedService = await Service.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-    if (!updatedService) {
-      return res.status(404).json({ message: 'Service not found' });
-    }
+    const updatedService = await Service.findByIdAndUpdate(req.params.id, req.body, { new: true });
     res.json(updatedService);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ message: 'Error updating service', error: error.message });
   }
 });
 
-// DELETE a service by ID (requires authentication)
-router.delete('/:id', auth, async (req, res) => {
+// DELETE a service by ID (requires authentication)auth.authenticateUser and auth.isAdmin middleware to ensure that only authenticated users with the 'admin' role can perform 
+router.delete('/:id', auth.authenticateUser, auth.isAdmin, async (req, res) => {
   try {
-    const deletedService = await Service.findByIdAndDelete(req.params.id);
-    if (!deletedService) {
-      return res.status(404).json({ message: 'Service not found' });
-    }
+    await Service.findByIdAndDelete(req.params.id);
     res.json({ message: 'Service deleted successfully' });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
+    res.status(500).json({ message: 'Error deleting service', error: error.message });
   }
 });
 
