@@ -22,27 +22,27 @@
     {
       "title": "Legal Aid",
       "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "smallImage": "img/portfolio/img-legal-aid2.jpg"
     },
     {
       "title": "Accommodation",
       "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "smallImage": "img/portfolio/img-accom.jpg"
     },
     {
       "title": "Education",
       "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "smallImage": "img/portfolio/img-edu1.jpg"
     },
     {
       "title": "Employment",
       "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "smallImage": "img/portfolio/img-work3.jpg"
     },
     {
       "title": "Mental Health",
       "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "smallImage": "img/portfolio/img-mental1.jpg"
     },
     {
       "title": "Rehabilitation",
